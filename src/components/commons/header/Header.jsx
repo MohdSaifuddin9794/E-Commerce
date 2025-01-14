@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Button, Col, Container, Dropdown, Nav, Row } from 'react-bootstrap';
 import { GoPerson, GoSearch } from 'react-icons/go';
 import { MdExpandMore } from 'react-icons/md';
@@ -38,9 +38,21 @@ const Header = () => {
     useEffect(() => {
         getCountry(countryApiUrl)
     }, [])
+      const headerRef = useRef();
+      useEffect(() => {
+        window.addEventListener("scroll", () => {
+          let position = window.pageYOffset;
+          // console.log(position)
+          if(position > 100){
+            headerRef.current.classList.add("nav-fixed");
+          }else {
+              headerRef.current.classList.remove("nav-fixed");
+          }
+        })
+      }, [])
     console.log(countryList)
     return (
-     <header className='pt-3'>
+     <header className='pt-3' ref={headerRef}>
         <Container className='pb-3'>
             <Row className='align-items-center'>
                 <Col xs={2}>

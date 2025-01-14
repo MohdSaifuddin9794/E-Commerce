@@ -1,5 +1,5 @@
 .slider-heading{
-    font-size: 32px;
+    font-size: 40px;
     color: #020303;
 }
 
@@ -29,15 +29,17 @@
 }
 
 .cat-slide.swiper .swiper-button-next{
-    top: -40px;
+    top: 30px;
 }
 .cat-slide.swiper .swiper-button-prev{
-top:-40px;
+top:30px;
 right: 60px;
 left: unset;
 }
 .cat-slide.swiper{
-    overflow: visible;
+    overflow: hidden;
+    padding-top: 60px ;
+    margin-top: -70px;
 }
 .cat-slide.swiper .swiper-wrapper{
     overflow: hidden;

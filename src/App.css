@@ -447,3 +447,331 @@ color: #3bb77e;
   color: #8a8a8a;
 }
 
+
+
+
+.badge.Hot{
+  background-color: #f74b81;
+}
+
+.badge.Sale{
+  background-color: #67bcee;
+}
+
+.badge.New{
+  background-color: #3BB77E
+}
+
+.badge.Off{
+  background-color: #f59758;
+}
+
+.product-card{
+  position: relative;
+}
+
+.product-card .badge{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  width: 70px;
+      border-radius: 10px 0px;
+}
+
+.nav-fixed{
+  position: fixed;
+  width: 100%;
+  z-index: 4;
+  top: 0;
+  background: #ffffffb5 !important;
+  backdrop-filter: blur(5px);
+}
+
+.nav-fixed .nav{
+    background: #ffffffb5 !important;
+  backdrop-filter: blur(2px);
+}
+.deal-banner{
+  background-image: url('./assets/images/banner-4.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 40px;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 520px;
+}
+.deal-banner h3{
+  font-size: 50px;
+  margin-bottom: 100px;
+  color: #253D4E;
+}
+.deal-banner .btn-deals{
+  background: #3bb77e;
+font-size: 13px;
+transition: all 0.5s ease-in-out;
+color: #fff;
+font-weight: 600;
+}
+.deal-banner .btn-deals:hover{
+  width: 120px;
+  background-color:rgb(255, 196, 0);
+  color: #fff;
+}
+
+.best-deals .swiper .product-card{
+  box-shadow: none;
+  width: 100% !important;
+
+}
+
+.best-deals .swiper .product-card div{
+  border: none;
+}
+.progress{
+  height: 6px !important;
+  margin-top: 15px;
+}
+.progress-bar{
+  background-color: #3bb77e !important;
+}
+.sold-items{
+  font-size: 13px;
+  color: #253D4E;
+}
+
+.best-deals .cat-slide.swiper .swiper-button-prev{
+  top: 50%;
+  right: unset;
+  left: 10px;
+}
+
+.best-deals .cat-slide.swiper .swiper-button-next{
+top: 50%;
+}
+
+.topSellingBox .topSelling-title{
+ position: relative;
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 30px !important;
+}
+.topSellingBox .topSelling-title::after {
+  content: "";
+  width: 80px;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #BCE3C9;}
+.topSellingBox .topSelling-list  .items{
+  position: relative;
+transition: all 0.3s ease-in-out;
+}
+.topSellingBox .topSelling-list  .items:hover{
+  transform: translateY(-5px);
+}
+.topSellingBox .topSelling-list  .items .list-item-img-container {
+width: 130px;
+  position: relative;
+  padding-top: 30%;
+  cursor:  pointer;
+  border-radius: 10px;
+}
+.topSellingBox .topSelling-list  .items .list-item-img-container img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  border-radius: 10px;
+}
+.topSellingBox .topSelling-list  .items  .items-info a{
+transition: all 0.2s ease-in-out;
+  color: #253D4E;
+  text-decoration: none;
+}
+
+.topSellingBox .topSelling-list  .items  .items-info a:hover{
+  color: #3BB77E;
+}
+.topSellingBox .topSelling-list  .items  .items-info a h3{
+  font-size: 16px;
+  font-weight: 700;
+}
+ .items-info  .rating svg {
+  fill: rgb(255, 196, 0);
+}
+
+.topSellingBox .topSelling-list  .items  .items-info .rates{
+color: #7e7e7e;
+}
+
+.position-relative.newsletter-inner{
+  background: url('./../public/assets/images/banner-10.png') no-repeat center;
+    background-size: auto;
+  background-size: cover;
+  padding: 84px 78px;
+  clear: both;
+  display: table;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 230px;
+  margin:50px 0px 30px;
+}
+
+.position-relative.newsletter-inner  .newsletter-content h2{
+margin: 0px 0px 20px;
+font-size: 40px;
+font-weight: 700;
+  color: #253D4E;
+}
+
+
+
+.position-relative.newsletter-inner  .newsletter-content p{
+  margin: 0px 0px 40px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 5px;
+  color: #7E7E7E;
+margin-bottom: 40px;
+}
+
+
+
+.position-relative.newsletter-inner  .newsletter-content p span{
+  color: #2aad71;
+}
+
+.position-relative.newsletter-inner  .newsletter-content .slider-box{
+  position: static !important;
+  max-width: 450px;
+}
+ .newsletter-inner img {
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+  max-width: 40%;
+}
+
+.shipping-post  .items-ship{
+  background-color:#F4F6FA;;
+  padding: 20px ;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.shipping-post  .items-ship .content h3{
+  margin: 0px 0px 8px;
+  font-size: 18px;
+  color: #253D4E;
+  font-weight: 600;
+}
+.shipping-post  .items-ship .content p{
+  margin: 0px 0px 0px 0px;
+    color: #7E7E7E;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.page-found-heading{
+font-size: 72px;
+  line-height: 1;
+  color: #253D4E;
+  font-weight: 700;
+}
+
+.page-content p{
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 5px;
+  color: #7E7E7E;
+    font-size: 18px;
+    margin: 35px 0px;
+}
+
+.page-content p a{
+  text-decoration: none;
+  color: #2aad71;
+  transition: 0.2s all ease-in;
+
+}
+
+.page-content p a:hover{
+  color: gold;
+  position: relative;
+  top: -2px;
+}
+
+.page-content .search-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.search-form form input {
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  height: 64px;
+  box-shadow: none;
+  padding-left: 20px;
+  font-size: 16px;
+  width: 100%;
+}
+
+
+.search-form form button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  border: none;
+  font-size: 20px;
+  height: 100%;
+  padding: 0 24px;
+  background-color: transparent;
+  color: #242424;
+  border: none !important;
+}
+.search-form form button:hover{
+  background-color: transparent;
+    color: #242424;
+}
+.search-form form button svg{
+  width: 30px;
+
+}
+.search-form form {
+  position: relative;
+}
+
+.page-content .btn.primary-btn{
+display: inline-flex;
+align-items: center;
+gap: 10px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px 30px;
+  border-radius: 4px;
+  color: #fff;
+  border: 1px solid transparent;
+  background-color: #3BB77E;
+  cursor: pointer;
+  transition: all 300ms linear 0s;
+  letter-spacing: 0.5px;
+  margin-top: 40px;
+}
+
+.page-content .btn.primary-btn svg{
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 10px;
+  transition-duration: 0.2s;
+}

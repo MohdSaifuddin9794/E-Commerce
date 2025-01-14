@@ -1,0 +1,88 @@
+.footer {
+    
+
+}
+.leftFooter .leftFooterAddress  {
+list-style-type: none;
+}
+
+.leftFooter .leftFooterAddress  li:not(:last-child){
+margin-bottom: 10px;
+}
+.leftFooter .leftFooterAddress  li{
+    color: #253D4E;
+    font-size: 15px;
+    line-height: 1.8;
+}
+ .widget-title{
+    margin: 15px 0 20px 0;
+    color: #253D4E;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.middleFooter .footeList{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.middleFooter .footeList li:not(:last-child){
+    display: block;
+  margin: 0 0 13px;
+}
+
+.middleFooter .footeList li a{
+    font-size: 15px;
+  display: block;
+      color: #253D4E;
+      text-decoration: none;
+}
+.middleFooter .footeList li a:hover{
+    color: #3BB77E;
+}
+
+.store-para {
+font-size: 15px;
+     color: #253D4E;
+}
+.bottom-footer .container{
+    border-top: 1px solid #3BB77E;
+}
+
+.bottom-footer .left p{
+    margin-bottom: 0px;
+    color: #7E7E7E;
+    font-size: 14px;
+    line-height: 24px;
+}
+.bottom-footer .left p strong{
+ color: #3BB77E;
+}
+.hot-line img{
+width: 38px;
+}
+.bottom-footer .right a{
+background:   #3BB77E;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 35px;
+padding: 8px 8px;
+ border-radius: 100px;
+}
+.bottom-footer .right a img{
+    width: 100%;
+   
+}
+.bottom-footer .right h6{
+    font-size: 15px;
+     color: #253D4E;
+     font-weight: 700;
+     margin: 0px 0px 0px;
+}
+
+.bottom-footer .right p {
+  margin-bottom: 0px;
+  color: #7E7E7E;
+  font-size: 14px;
+
+}

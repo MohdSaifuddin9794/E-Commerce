@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Button, Col, Container, Nav, Navbar, NavbarBrand, NavbarCollapse, NavbarToggle, NavDropdown, NavLink, Row } from "react-bootstrap";
 import { IoChevronDown, IoGridOutline } from "react-icons/io5";
 import { TfiHeadphoneAlt } from "react-icons/tfi";
@@ -6,8 +6,9 @@ import { Link } from "react-router-dom";
 import MegaMenu from "./MegaMenu";
 
 const Navigation = () => {
+
   return (
-    <div className="nav py-3">
+    <div className="nav py-3" >
       <Container>
         <Row className=" align-items-center">
           <Col sm={2}>
@@ -29,7 +30,7 @@ const Navigation = () => {
               </li>
               <li className="list-item">
                 <Button>
-                  <Link>Shop</Link>
+                  <Link to="/shop">Shop</Link>
                 </Button>
               </li>
               <li className="list-item">

@@ -8,13 +8,16 @@ import bannerOne from "./../../assets/images/banner-2.png";
 import bannerTwo from "./../../assets/images/banner-3.png";
 import { FaArrowRight } from 'react-icons/fa';
 import Product from '../../components/commons/Product';
+import BestDeal from './BestDeals/BestDeal';
+import TopSale from './TopSales/TopSale';
+import Newsletter from './NewsLetters/Newsletter';
 
-const Home = () => {
+const Home = (tag) => {
     return (
       <div>
         <Container>
           <HomeSlider />
-          <CategorySlider></CategorySlider>
+          <CategorySlider />
           <section className="mt-3 mb-4">
             <Row>
               <Col xl={4}>
@@ -69,7 +72,9 @@ const Home = () => {
           </section>
           <section className="py-3">
             <div className="d-flex align-items-center justify-content-between mb-3      ">
-              <h3 className="secondary-heading">Popular Products</h3>
+              <h3 className="secondary-heading slider-heading">
+                Popular Products
+              </h3>
               <ul className="pl-0 d-flex align-items-center gap-3 product-cat">
                 <li>
                   <Link to={"/"}>All</Link>
@@ -95,18 +100,54 @@ const Home = () => {
               </ul>
             </div>
             <div className="d-flex aling-items-center justify-content-between flex-wrap">
+              <Product tag={"Hot"}></Product>
+              <Product tag={"Sale"}></Product>
+              <Product tag={"New"}></Product>
+              <Product></Product>
+              <Product tag={"Off"}></Product>
               <Product></Product>
               <Product></Product>
-              <Product></Product>
-              <Product></Product>
-              <Product></Product>
-              <Product></Product>
-              <Product></Product>
-              <Product></Product>
-              <Product></Product>
+              <Product tag={"Hot"}></Product>
+              <Product tag={"Sale"}></Product>
               <Product></Product>
             </div>
           </section>
+          <section className="pt-5 pb-3">
+            <div className="d-flex align-items-center justify-content-between mb-3      ">
+              <h3 className="secondary-heading slider-heading">
+                Daily Best Sells
+              </h3>
+              <ul className="pl-0 d-flex align-items-center gap-3 product-cat">
+                <li>
+                  <Link to={"/"}>Featured</Link>
+                </li>
+                <li>
+                  <Link to={"/"}>Popular</Link>
+                </li>
+                <li>
+                  <Link to={"/"}>New added</Link>
+                </li>
+              </ul>
+            </div>
+            <BestDeal tag={"Hot"}></BestDeal>
+          </section>
+          <section className="py-4">
+            <Row>
+              <Col xl={3} xs={12} md={6}>
+                <TopSale title={"Top Selling"}></TopSale>
+              </Col>
+              <Col xl={3} xs={12} md={6}>
+                <TopSale title={"Trending Products"}></TopSale>
+              </Col>
+              <Col xl={3} xs={12} md={6}>
+                <TopSale title={"Recently added"}></TopSale>
+              </Col>
+              <Col xl={3} xs={12} md={6}>
+                <TopSale title={"Top Rated"}></TopSale>
+              </Col>
+            </Row>
+          </section>
+          <Newsletter/>
         </Container>
       </div>
     );

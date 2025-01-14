@@ -3,9 +3,12 @@ import product from "./../../assets/images/product-9-2.jpg";
 import { IoIosStar, IoMdHeartEmpty } from 'react-icons/io';
 import { IoCartOutline, IoEyeOutline } from 'react-icons/io5';
 import { GiInterleavedArrows } from 'react-icons/gi';
-const Product = () => {
+const Product = (props) => {
     return (
       <div className="product-card p-3">
+        {
+          props.tag !== null ? <span  className={`badge p-2 d-block ${props.tag === props.tag ? props.tag : ""}`}>{props.tag}</span> : null
+        }
         <div className="d-flex align-items-center justify-content-center">
           <div className="img-container">
             <img src={product} alt="" />
